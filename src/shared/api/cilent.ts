@@ -1,6 +1,9 @@
 import axios from 'axios'
 
-export const api = axios.create({
+export const apiCient = axios.create({
     baseURL: import.meta.env.VITE_API_BASE_URL,
-    withCredentials: true,
-})
+    timeout: 8000,
+    headers: {
+        'Content-Type' : 'application/json'
+    }
+});
