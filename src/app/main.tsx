@@ -3,12 +3,13 @@ import { createRoot } from 'react-dom/client'
 import App from './App'
 import QueryProvider from './providers/QueryProvider'
 import ThemaProvider from './providers/ThemeProvider'
+import DefaultRouterProvider from './providers/DefaultRouterProvider'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
       <ThemaProvider>
         <QueryProvider>
-          <App />
+            <App />
         </QueryProvider>
       </ThemaProvider>
   </StrictMode>,

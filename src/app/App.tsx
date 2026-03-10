@@ -1,7 +1,8 @@
-import SignIn from "../pages/SignIn";
+import DefaultRouterProvider from "./providers/DefaultRouterProvider";
 
 export default function App(){
     return (
-        <SignIn/>
+        <DefaultRouterProvider>
+        </DefaultRouterProvider>
     )
 }
